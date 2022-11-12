@@ -1,0 +1,24 @@
+{
+  "name": "javascript30-navbar-starter-files",
+  "version": "1.0.0",
+  "description": "Codewell's aim is to provide you with real-world design templates that you can use to practice your HTML and CSS projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy":"gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/learnerdev875/Ondeck-responsive.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/learnerdev875/Ondeck-responsive/issues"
+  },
+  "homepage":"http://learnerdev875.github.io/Ondeck-responsive",
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  }
+}
