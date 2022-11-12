@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-color:#f3ede5 ;
+}
+
+
+/* mobiles */
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    max-height:4rem;
+}
+.nav-links{
+    display: none;
+}
+.nav-buttons{
+    display: none;
+}
+
+.hero-container{
+    display: flex;
+    padding:1rem 1rem 3rem 1rem;
+    gap:1rem;
+    
+}
+.hero-title{
+    font-size: 3rem;
+    letter-spacing: -2px;
+}
+.hero-title > span{
+    color:#f6bc24;
+}
+.hero-text{
+    color:#a4a19e;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.hero-left > button{
+    width:140px;
+    background-color: #133416;
+    color: #e9ece9;
+    font-weight: 600;
+    font-size: 1rem;
+    padding:15px 20px;
+    border-radius: 7px;
+    margin-top: .8rem;
+}
+.review-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:2rem
+}
+.review-container > p{
+    font-size: 1.1rem;
+    color:#a4a19e;
+    flex:0.7;
+}
+.review-logos > img:nth-last-child(1){
+    width:30px;
+}
+.review-logos{
+    display: flex;
+    flex:0.3;
+    justify-content: space-around;
+}
+
+.footer-container{
+    text-align: center;
+    color:#a4a19e;
+    font-weight: 600;
+    padding:0 2rem 4rem;
+}
+.footer-container > p{
+    padding-bottom: 1rem;
+}
+.company-logos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1rem;
+    gap:1rem;
+}
+.company-logos> img:nth-child(2){
+    justify-self: flex-end;
+}
+
+.hero-right{
+    display: none;
+}
+/* tablets */
+
+@media screen and (min-width:481px) and (max-width:768px) {
+
+}
+
+/* Laptops */
+@media screen and (min-width:769px) and (max-width:1023px) {
+
+}
+
+/* desktops */
+@media screen and (min-width:1024px) {
+
+    body{
+        width:100%;
+        max-width: 1024px;
+        margin: auto;
+    }
+    .menu{
+        display: none;
+    }
+    .nav-container{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    .nav-links{
+        display: flex;
+        gap:2rem;
+    }
+    .nav-buttons{
+        display: block;
+    }
+    .nav-links > a{
+        text-decoration: none;
+        color:#a4a19e;
+    }
+    .subnav-container{
+        background-color: white;
+        width:40%;
+        padding:2rem;
+        border-radius: 10px;
+        position: absolute;
+     visibility: hidden;
+     top:60px;
+    }
+
+    .subnav-content{
+        display: flex;
+        align-items: flex-start;
+        gap:.3rem;
+        margin-bottom:1.5rem;
+    }
+    .subnav-content:nth-last-child(1){
+        margin-bottom: 0;
+    }
+    .subnav-description > h1,p{
+        font-size: 1rem;
+    }
+    .nav-buttons > a:nth-last-child(1){
+        width:140px;
+    background-color: #133416;
+    color: #e9ece9;
+    font-weight: 600;
+    font-size: 1rem;
+    padding:15px 20px;
+    border-radius: 7px;
+    }
+    .nav-buttons >a{
+        text-decoration: none;
+    }
+    .nav-buttons >a:nth-child(1){
+        color: #a4a19e;
+        margin-right:1rem;
+    }
+    .hero-container{
+        align-items: center;
+        padding-top:5rem;
+    }
+    .hero-right{
+        flex:0.3;
+        display: block;
+
+    }
+    .hero-right> img{
+        width:100%;
+    }
+    .hero-left{
+        flex:0.7;
+    }
+    .review-container>p{
+        flex:.5
+    }
+    .review-container{
+        justify-content: flex-start;
+    }
+    .review-logos{
+        justify-content: flex-start;
+        gap:10px;
+    }
+    .company-logos{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .company-logos> img:nth-child(2){
+        justify-self:unset;
+    }
+    .visible{
+        visibility: visible;
+    }
+}
+
+/* larger */
+
+
+
+
+/* 
+background #f3ede5
+yellow #f6bc24
+button #133416
+button text #e9ece9
+text color #a4a19e
+black #000000
+The difference is that REM values always use the root base value (set on the HTML element), whereas EM units are relative to their container.
+base font size is 16px
+*/
